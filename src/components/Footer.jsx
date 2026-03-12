@@ -1,6 +1,6 @@
 import React from 'react'
 import Insta from "../assets/Insta.jpg"
-import link from "../assets/link.jpg"
+import link from "../assets/Link.jpg"
 import Msg from "../assets/Msg.jpg"
 import { motion } from "framer-motion";
 

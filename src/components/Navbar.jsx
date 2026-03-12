@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Myimg from "../assets/Myimg.jpg"
 import Insta from "../assets/Insta.jpg"
-import link from "../assets/link.jpg"
+import link from "../assets/Link.jpg"
 
 
 function Navbar() {

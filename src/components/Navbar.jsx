@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Myimg from "../assets/Myimg.jpg"
 import Insta from "../assets/Insta.jpg"
-import Link from "../assets/Link.jpg"
+import Lid from "../assets/Link.jpg"
 
 
 function Navbar() {
@@ -16,7 +16,7 @@ function Navbar() {
          {/* <Link to="/Service">Service</Link> */}
          <Link to="/Contact" className='hover:text-white'>Contact</Link>
          <div className='flex gap-7'> <img src={Insta} alt=""  className='h-10 w-10 rounded-full mt-0.5'/>
-         <img src={Link} alt=""   className='h-10 w-10 rounded-full mt-0.5'/></div>
+         <img src={Lid} alt=""   className='h-10 w-10 rounded-full mt-0.5'/></div>
         </div>
     </div>
   )

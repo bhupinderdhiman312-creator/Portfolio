@@ -35,9 +35,7 @@ function Home() {
          <img src={Myimg} alt="" className='h-120 w-120 rounded-full'/>
       </motion.div>
 
-   <div>
-      heloooo hello
-   </div>
+  
     </div>
   )
 }

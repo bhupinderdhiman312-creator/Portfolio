@@ -34,6 +34,10 @@ function Home() {
        className='h-130 w-160 flex items-center justify-center'>
          <img src={Myimg} alt="" className='h-120 w-120 rounded-full'/>
       </motion.div>
+
+   <div>
+      heloooo hello
+   </div>
     </div>
   )
 }

@@ -30,8 +30,8 @@ function Navbar() {
 
         {/* Right Icons (Desktop) */}
         <div className='hidden md:flex gap-3 ml-auto mr-6'>
-          <img src={Insta} alt="" className='h-12 w-12 rounded-full'/>
-          <img src={Lid} alt="" className='h-12 w-12 rounded-full'/>
+          <img src={Insta} alt="" className='h-10 w-10 rounded-full'/>
+          <img src={Lid} alt="" className='h-10 w-10 rounded-full'/>
         </div>
 
         {/* ✅ Hamburger Icon */}
@@ -53,7 +53,7 @@ function Navbar() {
           <Link to="/Contact" onClick={() => setMenuOpen(false)}>Contact</Link>
 
           <div className='flex gap-3 mt-2'>
-            <img src={Insta} alt="" className='h-8 w-18 rounded-full'/>
+            <img src={Insta} alt="" className='h-8 w-8 rounded-full'/>
             <img src={Lid} alt="" className='h-8 w-8 rounded-full'/>
           </div>
         </div>

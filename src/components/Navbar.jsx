@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Myimg from "../assets/Myimg.jpg"
 import Insta from "../assets/Insta.jpg"
@@ -6,6 +6,8 @@ import Lid from "../assets/Link.jpg"
 import { Menu } from "lucide-react";
 
 function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <>
@@ -28,33 +30,34 @@ function Navbar() {
 
         {/* Right Icons (Desktop) */}
         <div className='hidden md:flex gap-3 ml-auto mr-6'>
-          <img src={Insta} alt="" className='h-8 w-8 rounded-full'/>
-          <img src={Lid} alt="" className='h-8 w-8 rounded-full'/>
+          <img src={Insta} alt="" className='h-12 w-12 rounded-full'/>
+          <img src={Lid} alt="" className='h-12 w-12 rounded-full'/>
         </div>
 
-        {/* ✅ Mobile Dropdown (DaisyUI style) */}
-        <div className="dropdown dropdown-end md:hidden ml-auto">
-          <label tabIndex={0} className="btn btn-ghost">
-            <Menu />
-          </label>
-
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-300 rounded-box w-40"
-          >
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/About">About</Link></li>
-            <li><Link to="/Resume">Resume</Link></li>
-            <li><Link to="/Contact">Contact</Link></li>
-
-            <div className='flex gap-3 justify-center mt-2'>
-              <img src={Insta} alt="" className='h-11 w-11 rounded-full'/>
-              <img src={Lid} alt="" className='h-11 w-11 rounded-full'/>
-            </div>
-          </ul>
+        {/* ✅ Hamburger Icon */}
+        <div 
+          className='md:hidden ml-auto cursor-pointer'
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <Menu />
         </div>
 
       </div>
+
+      {/* ✅ Mobile Menu */}
+      {menuOpen && (
+        <div className='md:hidden flex flex-col items-center bg-blue-300 gap-4 py-4 w-full'>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/About" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/Resume" onClick={() => setMenuOpen(false)}>Resume</Link>
+          <Link to="/Contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+
+          <div className='flex gap-3 mt-2'>
+            <img src={Insta} alt="" className='h-8 w-18 rounded-full'/>
+            <img src={Lid} alt="" className='h-8 w-8 rounded-full'/>
+          </div>
+        </div>
+      )}
 
     </div>
     </>

@@ -7,20 +7,29 @@ import { motion } from "framer-motion";
 function Footer() {
   return (
     <div>
-        <div className='h-70 w-full flex justify-center items-center bg-gray-950 border border-t-white'>
-            <motion.div
+        <div className='w-full flex justify-center items-center bg-gray-950 border-t border-white px-4 py-6'>
+            
+            <motion.div     
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
             viewport={{ once: true, amount: 0.2 }}
-            className='h-40 w-150 mt-4'>
-                <p className='ml-35 font-medium text-white'>@ 2026 Bhupinder Singh. All Rights Reserved.</p>
-                <div className='ml-60 flex gap-2 mt-2'>
-                    <img src={Insta} alt="" className='h-10 w-10 rounded-2xl'/>
-                    <img src={link} alt=""  className='h-10 w-10 rounded-2xl'/>
-                    <img src={Msg} alt=""  className='h-10 w-10 rounded-2xl'/>
+            className='w-full max-w-3xl flex flex-col items-center text-center'>
+                
+                <p className='font-medium text-white text-sm md:text-base'>
+                  @ 2026 Bhupinder Singh. All Rights Reserved.
+                </p>
+
+                <div className='flex gap-3 mt-3'>
+                    <img src={Insta} alt="" className='h-8 w-8 md:h-10 md:w-10 rounded-2xl'/>
+                    <img src={link} alt=""  className='h-8 w-8 md:h-10 md:w-10 rounded-2xl'/>
+                    <img src={Msg} alt=""  className='h-8 w-8 md:h-10 md:w-10 rounded-2xl'/>
                 </div>
-                <p className='ml-55 font-medium text-white mt-2'>Built with using React.js</p>
+
+                <p className='font-medium text-white mt-3 text-sm md:text-base'>
+                  Built with using React.js
+                </p>
+
             </motion.div>
         </div>
     </div>

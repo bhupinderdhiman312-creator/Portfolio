@@ -8,101 +8,101 @@ function Contact() {
     <div>
 
     {/* Top Section */}
-    <div className='w-full flex flex-col justify-evenly items-center bg-gray-950 px-4 py-10'>
+    <div className='h-40 w-full flex flex-col justify-evenly items-center bg-gray-950 px-4'>
         <motion.div
-        initial={{ opacity: 0, y:70}}
+        initial={{ opacity: 5, y:70}}
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 2}}
-        className='w-full max-w-5xl text-center'>
-          <p className='font-extrabold text-4xl md:text-6xl text-white mt-5'>Contact</p><br />
+        className='h-50 w-220 justify-center text-center'>
+          <p className='font-extrabold text-4xl md:text-6xl mt-10 text-white'>Contact</p><br />
           <p className='font-medium text-white'> Open to exciting collaborations, freelance projects, and new opportunities.</p>
     </motion.div>
     </div>
 
     {/* Main Section */}
-    <div className='w-full flex flex-col md:flex-row justify-evenly items-center bg-gray-950 gap-10 px-4 py-10'>
+    <div className='h-screen w-full flex flex-col md:flex-row justify-evenly items-center bg-gray-950 overflow-auto gap-6 px-4'>
 
       {/* Left Box */}
-      <div className='w-full md:w-[400px] border border-gray-500 rounded-2xl p-4'>
-        
+      <div className='h-150 w-130 border border-gray-500 rounded-2xl overflow-auto'><br />
+
         <motion.p
-        initial={{ opacity: 0, y:70}}
+        initial={{ opacity: 5, y:70}}
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 2}}
-        className='font-bold text-xl md:text-2xl text-white'>Contact Info.</motion.p><br />
+        className='font-bold text-2xl text-white ml-7'>Contact Info.</motion.p><br />
 
         <motion.p 
-        initial={{ opacity: 0, y:70}}
+        initial={{ opacity: 5, y:70}}
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 2}}
-        className='font-medium text-white'>
+        className='font-medium text-white ml-7'>
           Available for collaborations, freelance projects, and exciting ideas—let’s build the future of the Web Developer.
         </motion.p><br />
 
         <motion.div
-        initial={{ opacity: 0, y:70}}
+        initial={{ opacity: 5, y:70}}
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 2}}
-        className='flex items-center gap-4 mt-6'>
-           <MapPin className='h-10 w-10 text-white'/>
+        className='h-35 w-120 flex items-center ml-7'>
+           <MapPin className='h-15 w-15 text-white'></MapPin>
        <div> 
-        <p className='font-bold text-xl md:text-2xl text-white'>Our Location</p>
-        <p className='font-medium text-white'>Mohali, Punjab.</p>
+        <p className='font-bold text-3xl ml-10 text-white'>Our Location</p>
+        <p className='font-medium ml-10 text-white'>Mohali, Punjab.</p>
         </div>
         </motion.div>
 
         <motion.div
-        initial={{ opacity: 0, y:70}}
+        initial={{ opacity: 5, y:70}}
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 2}}
-        className='flex items-center gap-4 mt-6'>
-           <Phone className='h-10 w-10 text-white'/>
+        className='h-35 w-120 flex items-center ml-7'>
+           <Phone className='h-15 w-15 text-white'></Phone>
            <div>
-           <p className='font-bold text-xl md:text-2xl text-white'>Phone Number</p>
-           <p className='font-medium text-white'>+91 8699707446 </p>
+           <p className='font-bold text-3xl ml-10 text-white'>Phone Number</p>
+           <p className='font-medium ml-10 text-white'>+91 8699707446 </p>
            </div>
            </motion.div>
 
         <motion.div
-        initial={{ opacity: 0, y:70}}
+        initial={{ opacity: 5, y:70}}
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 2}}
-        className='flex items-center gap-4 mt-6'>
-          <Mail className='h-10 w-10 text-white'/>
+        className='h-35 w-120 flex items-center ml-7'>
+          <Mail className='h-15 w-15 text-white'></Mail>
           <div>
-            <p className='font-bold text-xl md:text-2xl text-white'>Email Address</p>
-            <p className='font-medium text-white'>bhupinderdhiman312@gmail.com</p>
+            <p className='font-bold text-3xl ml-10 text-white'>Email Address</p>
+            <p className='font-medium ml-10 text-white'>bhupinderdhiman312@gmail.com</p>
           </div>
         </motion.div>
 
       </div>
 
-      {/* Right Form */}
+      {/* Right Box */}
       <motion.div
-      initial={{ opacity: 0, y:70}}
+      initial={{ opacity: 5, y:70}}
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 2}}
-      className='w-full md:w-[600px] border border-gray-500 rounded-2xl p-4'>
+      className='h-160 w-200 border border-gray-500 rounded-2xl overflow-auto'>
 
-        <p className='font-extrabold text-2xl md:text-4xl text-white mt-2'>Get In Touch</p><br /><br />
+        <p className='font-extrabold text-3xl md:text-4xl text-white mt-5 ml-10'>Get In Touch</p><br /><br />
 
-        <p className=' font-bold text-lg md:text-2xl text-white'>Enter Your First Name:</p>
-        <input type="text" placeholder='Enter Your Name' className='h-10 w-full border border-blue-300 hover:scale-105 rounded-xl px-2'/><br /><br />
+        <p className=' font-bold text-xl md:text-2xl text-white ml-10 '>Enter Your First Name:</p>
+        <input type="text" placeholder='Enter Your Name' className='h-10 w-100 border border-blue-300 ml-10 rounded-xl'/><br /><br />
 
-        <p className='font-bold text-lg md:text-2xl text-white'>Enter Your Last Name:</p>
-        <input type="text" placeholder='Enter Your Email' className='h-10 w-full border border-blue-300 hover:scale-105 rounded-xl px-2'/><br /><br />
+        <p className='font-bold text-xl md:text-2xl text-white ml-10'>Enter Your Last Name:</p>
+        <input type="" placeholder='Enter Your Email' className='h-10 w-100 border border-blue-300 ml-10 rounded-xl'/><br /><br />
 
-        <p className='font-bold text-lg md:text-2xl text-white'>Enter Your Email Address:</p>
-        <input type="text" placeholder='Enter Your Subject'className='h-10 w-full border border-blue-300 hover:scale-105 rounded-xl px-2'/><br /><br />
+        <p className='font-bold text-xl md:text-2xl text-white ml-10'>Enter Your Email Address:</p>
+        <input type="text" placeholder='Enter Your Subject'className='h-10 w-100 border border-blue-300 ml-10 rounded-xl'/><br /><br />
 
-        <p className='font-bold text-lg md:text-2xl text-white'>Message</p>
-        <input type="text" placeholder='' className='h-20 w-full border border-blue-300 hover:scale-105 rounded-xl px-2'/><br /><br /><br />
+        <p className='font-bold text-xl md:text-2xl text-white ml-10'>Message</p>
+        <input type="text" placeholder='' className='h-20 w-150 border border-blue-300 ml-10 rounded-xl'/><br /><br /><br />
 
-        <button className='rounded-3xl h-12 w-40 bg-blue-500 hover:bg-blue-700 hover:scale-105 border border-blue-500 text-white font-bold'>
+        <button className='ml-10 rounded-3xl h-15 w-40 bg-blue-500 hover:bg-blue-700 border border-blue-500 text-white font-bold'>
           Send Message
         </button>
-
       </motion.div>
+
     </div>
     </div>
 

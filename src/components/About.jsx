@@ -95,7 +95,7 @@ function About() {
         viewport={{ once: true, amount: 0.2 }}
       >
 
-        <div className='w-full h-70 flex flex-wrap justify-center gap-6'>
+        <div className='w-full flex flex-wrap justify-center gap-6'>
 
           <div className="w-full sm:w-72 md:w-80 text-center hover:translate-y-2 shadow-md hover:shadow-indigo-500/40 transition-all duration-300 rounded-2xl flex flex-col gap-6 border border-sky-200 p-4">
             <p className="font-bold">HTML</p>
